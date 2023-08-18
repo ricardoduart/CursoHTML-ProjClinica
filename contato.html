@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .row {
+            margin: 5px;
+        }
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset {
+            width: 700px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: #f9f9f9;
+        }
+        textarea {
+            padding: 16px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre a Clínica</a></li>
+                <li><a href="horarioatendimento.html">Horários</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">                
+                <!-- Aqui vai o seu header -->
+                <h1 align="center">HEMOCLÍNICA</h1>
+                <center><img title="Banner" alt="Logomarca da empresa" src="/img/contato2.png" width="200" /></center>
+            </div>
+    
+            <div class="content" >                
+                <!-- Aqui vai o seu conteúdo -->          
+                <h1>Envie sua Dúvidas</h1>
+                <form name="enviarduvida" method="get" onsubmit="alert('Dúvida enviada com sucesso!')" autocomplete="on" action="#">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                    <div class="row">
+                        <label>Nome: </label><input type="text" name="name" />
+                        <label>E-mail: </label><input type="email" name="email" />
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dúvida</legend>                    
+                        <div class="row">
+                        <label>Assunto: </label><input type="text" name="subject" />                                                                
+                        <br><textarea rows="8" cols="30" name="message"></textarea>                    
+                    </div>
+                    </fieldset>
+                    <button type="reset">
+                        Limpar
+                    </button>
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </form>
+
+                <h1>Nossos Contatos e Endereço</h1>
+                <table>                  
+                    <tr>
+                        <td>Telefone:</td>
+                        <td>(64) 33621-4123</td>
+                    </tr>
+                    <tr>
+                        <td>Whatsapp:</td>
+                        <td>(64) 99999-11111</td>
+                    </tr>
+                    <tr>
+                        <td>Endereço:</td>
+                        <td>Rua Brasil, 134 - Centro</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Rio Verde - GO</td>
+                    </tr>
+                    <tr>
+                        <td>Localização:</td>
+                        <td><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1899.4279234528346!2d-50.92157134543068!3d-17.798470738032606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1692376680073!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                    </tr>
+                </table>
+                
+            </div>
+    
+            <div class="footer">            
+                <!-- Aqui vai o seu rodapé -->
+                <table>
+                    <tr>
+                    <th>Fale Conosco:</th>
+                    </tr>
+                    <tr>
+                        <td>Telefone:</td>
+                        <td>(64) 33621-4123</td>
+                    </tr>
+                    <tr>
+                        <td>Whatsapp:</td>
+                        <td>(64) 99999-11111</td>
+                    </tr>
+                    <tr>
+                        <td>instagram:</td>
+                        <td>@hemoclinica</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td>contato@hemoclinica.com</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
